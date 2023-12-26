@@ -15,6 +15,8 @@ function ShoppingCartProvider({children}) {
   const [productToShow, setProductToShow] = useState({});
   const [cartProducts, setCartProducts] = useState([]);
 
+  const [order, setOrder] = useState([]);
+
   return (
     <ShoppingCartContext.Provider value={{
       count,
@@ -28,7 +30,9 @@ function ShoppingCartProvider({children}) {
       setCartProducts,
       isCheckoutSideMenuOpen,
       openCheckoutSideMenu,
-      closeCheckoutSideMenu
+      closeCheckoutSideMenu,
+      order,
+      setOrder
     }}>
       {children}
     </ShoppingCartContext.Provider>
