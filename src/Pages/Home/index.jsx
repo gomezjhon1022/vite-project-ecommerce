@@ -18,7 +18,7 @@ function Home () {
         )
       }
     } else {
-      return context.items?.map(product =>(<Card key={product.id} {...product}/>))
+        return context.filteredItems?.map(product =>(<Card key={product.id} {...product}/>))
     }
   }
   return (
@@ -26,7 +26,7 @@ function Home () {
       <div className="flex items-center justify-center relative w-80 mb-4">
         <h1 className='font-medium text-xl'>Exclusive Products</h1>
       </div>
-      <input 
+      <input
         type="text"
         placeholder="Search a product"
         className="rounded-lg border border-black w-80 p-4 mb-4 focus:outline-none"

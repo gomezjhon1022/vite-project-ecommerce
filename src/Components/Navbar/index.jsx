@@ -17,6 +17,7 @@ const Navbar = () => {
         <li>
           <NavLink
             to='/'
+            onClick={() => context.setSearchByCategory()}
             className={({isActive}) =>
               isActive ? activeStyle : undefined}
             >
@@ -25,16 +26,28 @@ const Navbar = () => {
         </li>
         <li>
           <NavLink
-            to='/clothes'
+            to='/mens-clothing'
+            onClick={() => context.setSearchByCategory("men's clothing")}
             className={({isActive}) =>
               isActive ? activeStyle : undefined}
             >
-            Clothes
+            Men's clothing
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to='/womens-clothing'
+            onClick={() => context.setSearchByCategory("women's clothing")}
+            className={({isActive}) =>
+              isActive ? activeStyle : undefined}
+            >
+            Women's clothing
           </NavLink>
         </li>
         <li>
           <NavLink
             to='/electronics'
+            onClick={() => context.setSearchByCategory('electronics')}
             className={({isActive}) =>
               isActive ? activeStyle : undefined}
             >
@@ -43,29 +56,12 @@ const Navbar = () => {
         </li>
         <li>
           <NavLink
-            to='/furnitures'
+            to='/jewelery'
+            onClick={() => context.setSearchByCategory('jewelery')}
             className={({isActive}) =>
               isActive ? activeStyle : undefined}
             >
-            Furnitures
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to='/toys'
-            className={({isActive}) =>
-              isActive ? activeStyle : undefined}
-            >
-            Toys
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to='/others'
-            className={({isActive}) =>
-              isActive ? activeStyle : undefined}
-            >
-            Others
+            Jewelery
           </NavLink>
         </li>
       </ul>
