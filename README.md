@@ -1,8 +1,28 @@
-# React + Vite
+# Vite project E-Commerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a web page developed in React.js usign Vite and Tailwind.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Users can:
+
+- Interact with the categories to filter products.
+- Search by the name of products.
+- Add products to cart.
+- View orders.
+
+## Deployment
+
+The deployment is in the following link:
+
+
+
+## Technologies Used
+
+The project has been developed using the following technologies:
+
+- React JS.
+- HTML.
+- Tailwind.
+- Vite.
+
